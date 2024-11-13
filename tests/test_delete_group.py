@@ -1,0 +1,23 @@
+from models.group import Group
+from random import randrange
+
+
+# тест на удаление группы по индексу
+def test_delete_group_by_index(app):
+    if app.group.count() <= 1:
+        app.group.add_group(Group('New group for delete'))
+    old_list = app.group.get_group_list()
+    app.group.delete_group_by_index(0)
+    new_list = app.group.get_group_list()
+    del old_list[0:1]
+    assert sorted(old_list) == sorted(new_list)
+
+# тест на удаление группы по индексу
+def test_delete_random_group(app):
+    if app.group.count() <= 1:
+        app.group.add_group(Group('New group for delete'))
+    old_list = app.group.get_group_list()
+    app.group.delete_random_group(randrange(0, app.group.count()))
+    new_list = app.group.get_group_list()
+    del old_list[0:1]
+    assert sorted(old_list) == sorted(new_list)
