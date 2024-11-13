@@ -21,6 +21,4 @@ def test_delete_random_group(app):
     app.group.delete_random_group(index)
     new_list = app.group.get_group_list()
     del old_list[index:index+1]
-    for i in range(app.group.count()):
-        print("Old: ", i, old_list[i], "New: ", i, new_list[i])
     assert sorted(old_list) == sorted(new_list)
