@@ -12,7 +12,7 @@ def test_delete_group_by_index(app):
     del old_list[0:1]
     assert sorted(old_list) == sorted(new_list)
 
-# тест на удаление группы по индексу
+# тест на удаление произвольной группы
 def test_delete_random_group(app):
     if app.group.count() <= 1:
         app.group.add_group(Group('New group for delete'))
