@@ -1,0 +1,42 @@
+[
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 1 - json"
+  },
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 2 - json"
+  },
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 3 - json"
+  },
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 4 - json"
+  },
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 5 - json"
+  },
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 6 - json"
+  },
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 7 - json"
+  },
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 8 - json"
+  },
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 9 - json"
+  },
+  {
+    "py/object": "models.group.Group",
+    "name": "Group name 10 - json"
+  }
+]
